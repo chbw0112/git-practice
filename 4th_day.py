@@ -1,3 +1,6 @@
 import json
-data = {"name":"병우", "grade": "3학년", "전공": "시스템생명공학과"}
-json_str = json.dumps(data, ensure_ascii = False, indent=2)
+data = {"animal":"tiger", "gender":"female", "height": 5.2 }
+json_str = json.dumps(data, indent=2, ensure_ascii=False)
+print(json_str)
+j = json.loads(json_str)
+print(j)
